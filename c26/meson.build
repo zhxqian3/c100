@@ -1,0 +1,8 @@
+project('c26', 'c',
+  version : '0.1',
+  default_options : ['warning_level=3'])
+
+exe = executable('c26', 'c26.c',
+  install : true)
+
+test('basic', exe)
